@@ -1,0 +1,88 @@
+{
+	"info": {
+		"_postman_id": "882661ab-a8b6-46d3-897b-60b57621d390",
+		"name": "TinderAuth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24821199"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"login\":\"ildar2\",\r\n    \"password\":\"ildar\",\r\n    \"firstName\":\"ildar\",\r\n    \"secondName\":\"ildar\",\r\n    \"lifeStory\":\"ildar\",\r\n    \"email\":\"ildarthegreat@gmail.com\",\r\n    \"dateOfBirth\":\"1962-10-03\",\r\n    \"phoneNumber\":\"9963356251\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Vatify",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/auth/verify/1bbf452a-2b40-4c59-b99a-06afb2956f3b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"verify",
+						"1bbf452a-2b40-4c59-b99a-06afb2956f3b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"role\": \"GOLD\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
