@@ -15,6 +15,8 @@ spring:
     password: xjjxuctwtumuvitz
     port: 465
     protocol: smtps
+  profiles:
+    active: prod
 
 application:
   auth:
